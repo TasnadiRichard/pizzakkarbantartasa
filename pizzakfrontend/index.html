@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.bundle.min.js" integrity="sha512-sH8JPhKJUeA9PWk3eOcOl8U+lfZTgtBXD41q6cO/slwxGHCxKcW45K4oPCUhHG7NMB4mbKEddVmPuTXtpbCbFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Pizza karbantartás</title>
+    <script src="pizzak.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pizzák Nyilvántartása</h1>
+        <form action="#" method="post" class="row" id="pizza">
+            <fieldset>
+                <legend>
+                    Aktuális pizza karbantartása
+                    <div class="row">
+                        <div class="mb-3 col-4">
+                            <label for="pazon" class="form-label">Azonosító: </label>
+                            <input type="text" class="form-control" id="pazon" name="pazon">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="pnev" class="form-label">Név: </label>
+                            <input type="text" class="form-control" id="pnev", name="pnev">
+                        </div>
+                        <div class="mb-3 col-4">
+                            <label for="par" class="form-label">Ár: </label>
+                            <input type="text" class="form-control" id="par" name="par">
+                        </div>
+                    </div>
+                </legend>
+            </fieldset>
+            <div class="d-flex justify-content-around">
+                <button type="button" class="btn btn-primary" id="create">Create</button>
+                <button type="button" class="btn btn-info" id="read">Read</button>
+                <button type="button" class="btn btn-success" id="update">Update</button>
+                <button type="button" class="btn btn-danger" id="delete">Delete</button>
+            </div>
+        </form>
+        <div id="pizzalista">
+
+        </div>
+    </div>
+</body>
+</html>
